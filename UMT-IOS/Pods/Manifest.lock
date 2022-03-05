@@ -5,20 +5,24 @@ PODS:
   - GoogleMaps/Maps (5.1.0):
     - GoogleMaps/Base
   - GooglePlaces (5.0.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - GoogleMaps
     - GooglePlaces
+    - SnapKit
 
 SPEC CHECKSUMS:
   GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
   GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: ba368b46865fbdb3338110d8ab23eef394bab305
+PODFILE CHECKSUM: a04db6a68ee8539f3dca87be72ed0b21d37b5b5e
 
 COCOAPODS: 1.11.2
