@@ -32,4 +32,14 @@ class MainViewModel {
         print("markers: \(markers)")
         viewController.mapView.layoutIfNeeded()
     }
+    func makeMarkMyLoc(latitude: Double, longitude: Double) {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 33, height: 44))
+        imageView.image = UIImage(named: "myLocation")
+        let gmsMarker = GMSMarker(position: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+        gmsMarker.iconView = imageView
+        gmsMarker.map = viewController.mapView
+        markers.append( gmsMarker)
+        print("markers: \(markers)")
+        viewController.mapView.layoutIfNeeded()
+    }
 }

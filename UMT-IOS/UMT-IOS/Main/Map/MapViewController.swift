@@ -33,7 +33,7 @@ class MapViewController: UIViewController, LocDelegate {
         dataManager.getLocs(lat: 37.548, long: 127.044, delegate: self)
         NotificationCenter.default.addObserver(self, selector: #selector(showSheetVC), name: .init(rawValue: "showSheet"), object: nil)
         viewModel = MainViewModel(viewController: self)
-        viewModel?.makeMark(latitude: 37.548, longitude:  127.044)
+        viewModel?.makeMarkMyLoc(latitude: 37.548, longitude:  127.044)
     }       
     
     override func viewDidAppear(_ animated: Bool) {
