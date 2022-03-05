@@ -7,8 +7,6 @@
 		<string>googlechromes</string>
 		<string>comgooglemaps</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>짜란</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -19,7 +19,7 @@ extension QuestRegisterViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAttribute()
+//        setupAttribute()
         setupLayout()
     }
 }
