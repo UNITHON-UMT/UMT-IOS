@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "createButton.png",
+      "filename" : "circleImage.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "createButton@2x.png",
+      "filename" : "circleImage@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "createButton@3x.png",
+      "filename" : "circleImage@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

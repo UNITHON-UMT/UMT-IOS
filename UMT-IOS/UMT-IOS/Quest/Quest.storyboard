@@ -3,6 +3,7 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,11 +121,189 @@
             </objects>
             <point key="canvasLocation" x="40.654205607476634" y="773.65010799136076"/>
         </scene>
+        <!--Add Quest View Controller-->
+        <scene sceneID="70d-Kg-jkw">
+            <objects>
+                <viewController storyboardIdentifier="AddQuestViewController" id="9hH-Cw-HRn" customClass="AddQuestViewController" customModule="UMT_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="64P-Um-Z5k">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="퀘스트 생성하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs7-Oc-t5O">
+                                <rect key="frame" x="132.66666666666666" y="259" width="162.99999999999997" height="31.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QImage" translatesAutoresizingMaskIntoConstraints="NO" id="A6j-Kg-hOA">
+                                <rect key="frame" x="30" y="344" width="25" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="QBE-34-niq"/>
+                                    <constraint firstAttribute="height" constant="27" id="uJP-xZ-AVM"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="퀘스트 질문을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="72d-s0-yDD">
+                                <rect key="frame" x="70" y="340.33333333333331" width="328" height="34"/>
+                                <color key="backgroundColor" name="Gray01"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WVM-2P-rfG">
+                                <rect key="frame" x="70" y="394.33333333333331" width="328" height="120.99999999999994"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MpI-7L-UxB">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="25"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xel-yR-zB0">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="MFK-7x-iTM"/>
+                                                    <constraint firstAttribute="height" constant="25" id="vbB-fk-bhk"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circleImage"/>
+                                                <connections>
+                                                    <action selector="ButtonDidTap:" destination="9hH-Cw-HRn" eventType="touchUpInside" id="Jmz-0a-wI7"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="선택지를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-N5-OOn">
+                                                <rect key="frame" x="35" y="0.0" width="293" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-Yb-Dg8">
+                                        <rect key="frame" x="0.0" y="32" width="328" height="25"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLm-Gz-XP3">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="5zk-zp-on5"/>
+                                                    <constraint firstAttribute="height" constant="25" id="QNT-EB-kv3"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circleImage"/>
+                                                <connections>
+                                                    <action selector="ButtonDidTap:" destination="9hH-Cw-HRn" eventType="touchUpInside" id="HZs-dl-zv5"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="선택지를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfB-ww-SN7">
+                                                <rect key="frame" x="35" y="0.0" width="293" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SBd-AG-mNY">
+                                        <rect key="frame" x="0.0" y="64" width="328" height="25"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-ih-pRz">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="H8q-fs-drF"/>
+                                                    <constraint firstAttribute="height" constant="25" id="r1m-fY-MUc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circleImage"/>
+                                                <connections>
+                                                    <action selector="ButtonDidTap:" destination="9hH-Cw-HRn" eventType="touchUpInside" id="dkZ-RH-c3C"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="선택지를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-gB-dsm">
+                                                <rect key="frame" x="35" y="0.0" width="293" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PiE-Ab-ehd">
+                                        <rect key="frame" x="0.0" y="96" width="328" height="25"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRi-zF-9vi">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="NKo-Zm-Btz"/>
+                                                    <constraint firstAttribute="height" constant="25" id="SLr-DO-jdS"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="circleImage"/>
+                                                <connections>
+                                                    <action selector="ButtonDidTap:" destination="9hH-Cw-HRn" eventType="touchUpInside" id="Fpl-hC-Qqe"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="선택지를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-rO-Rms">
+                                                <rect key="frame" x="35" y="0.0" width="293" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SBd-AG-mNY" firstAttribute="width" secondItem="WVM-2P-rfG" secondAttribute="width" id="5IN-jp-a6E"/>
+                                    <constraint firstItem="MpI-7L-UxB" firstAttribute="width" secondItem="WVM-2P-rfG" secondAttribute="width" id="NFU-Ib-D54"/>
+                                    <constraint firstItem="UtR-Yb-Dg8" firstAttribute="width" secondItem="WVM-2P-rfG" secondAttribute="width" id="eM6-YW-o6i"/>
+                                    <constraint firstItem="PiE-Ab-ehd" firstAttribute="width" secondItem="WVM-2P-rfG" secondAttribute="width" id="rsN-fT-Msf"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 정답인 선택지를 체크해주세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIu-oa-d0a">
+                                <rect key="frame" x="70.000000000000014" y="535.33333333333337" width="216.33333333333337" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" name="MainPurple"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3v-IJ-A1C">
+                                <rect key="frame" x="113.66666666666669" y="703" width="201" height="59"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="TreasureShareImage"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gaX-Ug-Xou"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cIu-oa-d0a" firstAttribute="leading" secondItem="WVM-2P-rfG" secondAttribute="leading" id="6JB-PL-jqW"/>
+                            <constraint firstItem="A6j-Kg-hOA" firstAttribute="leading" secondItem="gaX-Ug-Xou" secondAttribute="leading" constant="30" id="6On-PE-rCA"/>
+                            <constraint firstItem="Z3v-IJ-A1C" firstAttribute="centerX" secondItem="gaX-Ug-Xou" secondAttribute="centerX" id="7Lt-MB-2NB"/>
+                            <constraint firstItem="cIu-oa-d0a" firstAttribute="top" secondItem="WVM-2P-rfG" secondAttribute="bottom" constant="20" id="Dcm-Cc-exm"/>
+                            <constraint firstItem="gaX-Ug-Xou" firstAttribute="bottom" secondItem="Z3v-IJ-A1C" secondAttribute="bottom" constant="130" id="Qfq-3W-9DJ"/>
+                            <constraint firstItem="72d-s0-yDD" firstAttribute="top" secondItem="bs7-Oc-t5O" secondAttribute="bottom" constant="50" id="Ry3-Zi-cfC"/>
+                            <constraint firstItem="WVM-2P-rfG" firstAttribute="top" secondItem="72d-s0-yDD" secondAttribute="bottom" constant="20" id="Ua0-g3-yyw"/>
+                            <constraint firstItem="72d-s0-yDD" firstAttribute="leading" secondItem="A6j-Kg-hOA" secondAttribute="trailing" constant="15" id="dkV-LL-jx7"/>
+                            <constraint firstItem="bs7-Oc-t5O" firstAttribute="centerX" secondItem="gaX-Ug-Xou" secondAttribute="centerX" id="dqg-Pm-0XH"/>
+                            <constraint firstItem="gaX-Ug-Xou" firstAttribute="trailing" secondItem="WVM-2P-rfG" secondAttribute="trailing" constant="30" id="eOL-Jv-d4c"/>
+                            <constraint firstItem="A6j-Kg-hOA" firstAttribute="centerY" secondItem="72d-s0-yDD" secondAttribute="centerY" id="i55-s7-QxU"/>
+                            <constraint firstItem="bs7-Oc-t5O" firstAttribute="top" secondItem="gaX-Ug-Xou" secondAttribute="top" constant="215" id="iiU-Yh-mgP"/>
+                            <constraint firstItem="gaX-Ug-Xou" firstAttribute="trailing" secondItem="72d-s0-yDD" secondAttribute="trailing" constant="30" id="t2c-s3-kDl"/>
+                            <constraint firstItem="WVM-2P-rfG" firstAttribute="leading" secondItem="72d-s0-yDD" secondAttribute="leading" id="zbG-sL-7fE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstButon" destination="Xel-yR-zB0" id="V3o-iU-MM1"/>
+                        <outlet property="fourthButton" destination="CRi-zF-9vi" id="ZlP-r2-tWZ"/>
+                        <outlet property="questQuestionTextField" destination="72d-s0-yDD" id="foK-aq-5gF"/>
+                        <outlet property="secondButton" destination="cLm-Gz-XP3" id="04e-gs-Lbc"/>
+                        <outlet property="thirdButton" destination="f7Q-ih-pRz" id="kTL-hG-g3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ece-aR-QI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.79439252336442" y="773.65010799136076"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="QImage" width="25" height="27"/>
+        <image name="TreasureShareImage" width="177" height="45"/>
         <image name="addNoQuestButton" width="214" height="45"/>
         <image name="addQuestButton" width="214" height="45"/>
+        <image name="circleImage" width="25" height="25"/>
         <image name="moya" width="150" height="150"/>
+        <namedColor name="Gray01">
+            <color red="0.82352941176470584" green="0.81960784313725488" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainPurple">
+            <color red="0.63529411764705879" green="0.17254901960784313" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

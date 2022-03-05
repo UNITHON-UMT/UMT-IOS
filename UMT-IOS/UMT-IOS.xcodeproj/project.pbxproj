@@ -10,6 +10,7 @@
 		254A13BD27D3B4F300EAAFDE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254A13BC27D3B4F300EAAFDE /* CameraViewController.swift */; };
 		254A13C027D3B67E00EAAFDE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 254A13BF27D3B67E00EAAFDE /* SnapKit */; };
 		254A13C227D3BC2500EAAFDE /* AddTreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254A13C127D3BC2500EAAFDE /* AddTreasureViewController.swift */; };
+		254A13C427D3DA3900EAAFDE /* AddQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254A13C327D3DA3900EAAFDE /* AddQuestViewController.swift */; };
 		25F69AFD27D34CCB00BA7BD7 /* Quest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */; };
 		25F69AFF27D34D0100BA7BD7 /* QuestRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */; };
 		25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		254A13BC27D3B4F300EAAFDE /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		254A13C127D3BC2500EAAFDE /* AddTreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTreasureViewController.swift; sourceTree = "<group>"; };
+		254A13C327D3DA3900EAAFDE /* AddQuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestViewController.swift; sourceTree = "<group>"; };
 		25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quest.storyboard; sourceTree = "<group>"; };
 		25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRegisterViewController.swift; sourceTree = "<group>"; };
 		25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */,
 				254A13BC27D3B4F300EAAFDE /* CameraViewController.swift */,
 				254A13C127D3BC2500EAAFDE /* AddTreasureViewController.swift */,
+				254A13C327D3DA3900EAAFDE /* AddQuestViewController.swift */,
 			);
 			path = Quest;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				254A13C227D3BC2500EAAFDE /* AddTreasureViewController.swift in Sources */,
 				25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */,
 				25F69B2B27D3818B00BA7BD7 /* MainTabBarController.swift in Sources */,
+				254A13C427D3DA3900EAAFDE /* AddQuestViewController.swift in Sources */,
 				FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */,
 				FF93AB8827D350CC0044FCFB /* SheetViewController.swift in Sources */,
 				25F69B0627D3673D00BA7BD7 /* SolveViewController.swift in Sources */,
