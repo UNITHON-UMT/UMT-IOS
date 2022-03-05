@@ -10,6 +10,7 @@
 		25F69AFD27D34CCB00BA7BD7 /* Quest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */; };
 		25F69AFF27D34D0100BA7BD7 /* QuestRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */; };
 		25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */; };
+		63B2F34883D6780F21622319 /* Pods_UMT_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D2B3EBA833A830097AC50C /* Pods_UMT_IOS.framework */; };
 		FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */; };
 		FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */; };
 		FF93AB7327D34A1B0044FCFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7227D34A1B0044FCFB /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quest.storyboard; sourceTree = "<group>"; };
 		25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRegisterViewController.swift; sourceTree = "<group>"; };
 		25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
+		76D2B3EBA833A830097AC50C /* Pods_UMT_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMT_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57558D05FD223CFE4B8CFBF /* Pods-UMT-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMT-IOS.debug.xcconfig"; path = "Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F7C50488D66BA6E60FA941BC /* Pods-UMT-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMT-IOS.release.xcconfig"; path = "Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		FF93AB6B27D34A1B0044FCFB /* UMT-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMT-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF93AB8527D34F2A0044FCFB /* PanControllerHeight in Frameworks */,
+				63B2F34883D6780F21622319 /* Pods_UMT_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,11 +76,30 @@
 			path = StoryboardUtils;
 			sourceTree = "<group>";
 		};
+		5A005E756D30A0330003C532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E57558D05FD223CFE4B8CFBF /* Pods-UMT-IOS.debug.xcconfig */,
+				F7C50488D66BA6E60FA941BC /* Pods-UMT-IOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCEB48E1237F91E05B325910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76D2B3EBA833A830097AC50C /* Pods_UMT_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF93AB6227D34A1B0044FCFB = {
 			isa = PBXGroup;
 			children = (
 				FF93AB6D27D34A1B0044FCFB /* UMT-IOS */,
 				FF93AB6C27D34A1B0044FCFB /* Products */,
+				5A005E756D30A0330003C532 /* Pods */,
+				CCEB48E1237F91E05B325910 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF93AB7F27D34A1C0044FCFB /* Build configuration list for PBXNativeTarget "UMT-IOS" */;
 			buildPhases = (
+				3994E659AFD7F1AEB7DCFBB5 /* [CP] Check Pods Manifest.lock */,
 				FF93AB6727D34A1B0044FCFB /* Sources */,
 				FF93AB6827D34A1B0044FCFB /* Frameworks */,
 				FF93AB6927D34A1B0044FCFB /* Resources */,
+				A3D9C9D5600054F36A0D487E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +219,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3994E659AFD7F1AEB7DCFBB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UMT-IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D9C9D5600054F36A0D487E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF93AB6727D34A1B0044FCFB /* Sources */ = {
@@ -348,12 +416,13 @@
 		};
 		FF93AB8027D34A1C0044FCFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57558D05FD223CFE4B8CFBF /* Pods-UMT-IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
+				DEVELOPMENT_TEAM = 3L398A7UTZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UMT-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,12 +445,13 @@
 		};
 		FF93AB8127D34A1C0044FCFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C50488D66BA6E60FA941BC /* Pods-UMT-IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
+				DEVELOPMENT_TEAM = 3L398A7UTZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UMT-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PanControllerHeight",
+        "repositoryURL": "https://github.com/thunderlatent/PanControllerHeight",
+        "state": {
+          "branch": null,
+          "revision": "1a10bfcc356c5d9978ed6e1546fd2c64551d42dc",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
