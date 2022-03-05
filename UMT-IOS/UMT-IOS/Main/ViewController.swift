@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import PanControllerHeight
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()        
     }
-
+    
+    func showSheetVC() {
+        let sheetVC = SheetViewController()
+        sheetVC.configurePanSetting(viewController: sheetVC, defaultHeight: 300, maxHeight: 600)
+        presentPanViewController(viewController: sheetVC)
+    }
 
 }
 

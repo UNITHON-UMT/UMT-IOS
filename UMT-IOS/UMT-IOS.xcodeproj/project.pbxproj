@@ -14,6 +14,7 @@
 		FF93AB7827D34A1C0044FCFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7727D34A1C0044FCFB /* Assets.xcassets */; };
 		FF93AB7B27D34A1C0044FCFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7927D34A1C0044FCFB /* LaunchScreen.storyboard */; };
 		FF93AB8527D34F2A0044FCFB /* PanControllerHeight in Frameworks */ = {isa = PBXBuildFile; productRef = FF93AB8427D34F2A0044FCFB /* PanControllerHeight */; };
+		FF93AB8827D350CC0044FCFB /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB8727D350CC0044FCFB /* SheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FF93AB7727D34A1C0044FCFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF93AB7A27D34A1C0044FCFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF93AB7C27D34A1C0044FCFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF93AB8727D350CC0044FCFB /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +73,19 @@
 		FF93AB8227D34A4E0044FCFB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FF93AB8627D350B50044FCFB /* Sheet */,
 				FF93AB7427D34A1B0044FCFB /* Main.storyboard */,
 				FF93AB7227D34A1B0044FCFB /* ViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		FF93AB8627D350B50044FCFB /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				FF93AB8727D350CC0044FCFB /* SheetViewController.swift */,
+			);
+			path = Sheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			files = (
 				FF93AB7327D34A1B0044FCFB /* ViewController.swift in Sources */,
 				FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */,
+				FF93AB8827D350CC0044FCFB /* SheetViewController.swift in Sources */,
 				FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
