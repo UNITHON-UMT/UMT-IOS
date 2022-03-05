@@ -5,13 +5,13 @@
 //  Created by 김우성 on 2022/03/05.
 //
 
-import UIKit
 
+import UIKit
 
 class MainTabBarController: UITabBarController {
     // MARK: - Properties
     // 탭바 양 사이드의 CornerRadius
-    let customTabBarCornerRadius: CGFloat = 50
+    let customTabBarCornerRadius: CGFloat = 65
     
     // 버튼의 X 위치
     var xPosition = UIScreen.main.bounds.width / 2 - 50
@@ -78,11 +78,10 @@ class MainTabBarController: UITabBarController {
     
     private func setupTabBarUI() {
         // Setup your colors and corner radius
-        self.tabBar.backgroundColor = UIColor.darkGray
-        self.tabBar.layer.cornerRadius = 30
+        self.tabBar.backgroundColor = .white
+        self.tabBar.layer.cornerRadius = customTabBarCornerRadius
         self.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-//        self.tabBar.backgroundColor = .darkGray
-        self.tabBar.tintColor = .blue
+        self.tabBar.tintColor = .black
         self.tabBar.unselectedItemTintColor = UIColor.white
         
         // Remove the line
@@ -100,17 +99,17 @@ class MainTabBarController: UITabBarController {
     private func addCustomTabBarView() {
         self.customTabBarView.frame = tabBar.frame
         
-        self.customTabBarView.backgroundColor = .darkGray
+        self.customTabBarView.backgroundColor = .white
         self.customTabBarView.layer.cornerRadius = customTabBarCornerRadius
         self.customTabBarView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
 
         self.customTabBarView.layer.masksToBounds = false
-        self.customTabBarView.layer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
-        self.customTabBarView.layer.shadowOffset = CGSize(width: -4, height: -6)
-        self.customTabBarView.layer.shadowOpacity = 0.5
-        self.customTabBarView.layer.shadowRadius = 20
+        self.customTabBarView.layer.shadowColor = UIColor.black.withAlphaComponent(0.66).cgColor
+        self.customTabBarView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.customTabBarView.layer.shadowOpacity = 0.88
+        self.customTabBarView.layer.shadowRadius = 5
         self.view.addSubview(customTabBarView)
-        customTabBarView.layer.zPosition = -1
+//        customTabBarView.layer.zPosition = 1
         
         self.view.bringSubviewToFront(self.tabBar)
         self.view.addSubview(addButton)
