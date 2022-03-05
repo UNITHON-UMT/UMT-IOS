@@ -13,6 +13,7 @@
 		FF93AB7627D34A1B0044FCFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7427D34A1B0044FCFB /* Main.storyboard */; };
 		FF93AB7827D34A1C0044FCFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7727D34A1C0044FCFB /* Assets.xcassets */; };
 		FF93AB7B27D34A1C0044FCFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7927D34A1C0044FCFB /* LaunchScreen.storyboard */; };
+		FF93AB8527D34F2A0044FCFB /* PanControllerHeight in Frameworks */ = {isa = PBXBuildFile; productRef = FF93AB8427D34F2A0044FCFB /* PanControllerHeight */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF93AB8527D34F2A0044FCFB /* PanControllerHeight in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = "UMT-IOS";
+			packageProductDependencies = (
+				FF93AB8427D34F2A0044FCFB /* PanControllerHeight */,
+			);
 			productName = "UMT-IOS";
 			productReference = FF93AB6B27D34A1B0044FCFB /* UMT-IOS.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = FF93AB6227D34A1B0044FCFB;
+			packageReferences = (
+				FF93AB8327D34F2A0044FCFB /* XCRemoteSwiftPackageReference "PanControllerHeight" */,
+			);
 			productRefGroup = FF93AB6C27D34A1B0044FCFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF93AB8327D34F2A0044FCFB /* XCRemoteSwiftPackageReference "PanControllerHeight" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thunderlatent/PanControllerHeight";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF93AB8427D34F2A0044FCFB /* PanControllerHeight */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF93AB8327D34F2A0044FCFB /* XCRemoteSwiftPackageReference "PanControllerHeight" */;
+			productName = PanControllerHeight;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF93AB6327D34A1B0044FCFB /* Project object */;
 }
