@@ -113,9 +113,16 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         guard let imageData = photo.fileDataRepresentation()
             else { return }
         
+        // MARK: - Result Image
         let image = UIImage(data: imageData)
         //여기서 photo_imageview 은 사진촬영후 나오는 이미지 뷰
-        photo_imageview.image = image
+//        photo_imageview.image = image
+        
+        let storyboard = UIStoryboard(name: "Quest", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "AddTreasureViewController") as! AddTreasureViewController
+        viewController.takenPhoto = image
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true)
     }
     
     

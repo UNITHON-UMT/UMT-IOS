@@ -40,8 +40,94 @@
             </objects>
             <point key="canvasLocation" x="41" y="80"/>
         </scene>
+        <!--Add Treasure View Controller-->
+        <scene sceneID="GCT-xk-nwY">
+            <objects>
+                <viewController storyboardIdentifier="AddTreasureViewController" id="5tX-Du-tcG" customClass="AddTreasureViewController" customModule="UMT_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4nf-68-ieQ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moya" translatesAutoresizingMaskIntoConstraints="NO" id="Ajm-2H-BqA">
+                                <rect key="frame" x="28" y="72" width="372" height="372"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="372" id="A5C-Ta-hPh"/>
+                                    <constraint firstAttribute="height" constant="372" id="V2s-nw-7Rv"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사진에 어울리는 해시태그를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IsO-R5-dRB">
+                                <rect key="frame" x="30" y="464" width="368" height="42"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="9ve-Pk-gdV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textfieldEditingChanged:" destination="5tX-Du-tcG" eventType="editingChanged" id="GCh-vd-egN"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U42-W1-vEe">
+                                <rect key="frame" x="30" y="516" width="368" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="0BJ-JV-oWl"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mpk-jA-oif">
+                                <rect key="frame" x="95" y="691" width="238" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9a-Fo-hZ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="59"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="addNoQuestButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIg-us-umt">
+                                        <rect key="frame" x="0.0" y="67" width="238" height="59"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="addQuestButton"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vko-qH-D8C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ajm-2H-BqA" firstAttribute="top" secondItem="Vko-qH-D8C" secondAttribute="top" constant="28" id="AXm-SA-ibn"/>
+                            <constraint firstItem="U42-W1-vEe" firstAttribute="top" secondItem="IsO-R5-dRB" secondAttribute="bottom" constant="10" id="EHG-AY-Pdf"/>
+                            <constraint firstItem="Vko-qH-D8C" firstAttribute="trailing" secondItem="U42-W1-vEe" secondAttribute="trailing" constant="30" id="EUj-rF-ykf"/>
+                            <constraint firstItem="mpk-jA-oif" firstAttribute="top" secondItem="U42-W1-vEe" secondAttribute="bottom" constant="15" id="LF4-j8-9zj"/>
+                            <constraint firstItem="mpk-jA-oif" firstAttribute="centerX" secondItem="Vko-qH-D8C" secondAttribute="centerX" id="OpX-tp-dUF"/>
+                            <constraint firstItem="IsO-R5-dRB" firstAttribute="top" secondItem="Ajm-2H-BqA" secondAttribute="bottom" constant="20" id="THA-pS-h8n"/>
+                            <constraint firstItem="IsO-R5-dRB" firstAttribute="leading" secondItem="Vko-qH-D8C" secondAttribute="leading" constant="30" id="i24-Px-NYz"/>
+                            <constraint firstItem="Vko-qH-D8C" firstAttribute="trailing" secondItem="IsO-R5-dRB" secondAttribute="trailing" constant="30" id="oaK-cl-g8i"/>
+                            <constraint firstItem="U42-W1-vEe" firstAttribute="leading" secondItem="Vko-qH-D8C" secondAttribute="leading" constant="30" id="ux1-iI-tid"/>
+                            <constraint firstItem="Ajm-2H-BqA" firstAttribute="centerX" secondItem="Vko-qH-D8C" secondAttribute="centerX" id="vcd-Bw-t0D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noQuestButton" destination="e9a-Fo-hZ9" id="nYc-QW-wuN"/>
+                        <outlet property="questButton" destination="MIg-us-umt" id="nUw-9L-rQt"/>
+                        <outlet property="textView" destination="U42-W1-vEe" id="eNY-ee-VdB"/>
+                        <outlet property="treasureImageView" destination="Ajm-2H-BqA" id="q7U-jr-1rt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVy-Ws-5BB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.654205607476634" y="773.65010799136076"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="addNoQuestButton" width="214" height="45"/>
+        <image name="addQuestButton" width="214" height="45"/>
+        <image name="moya" width="150" height="150"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

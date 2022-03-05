@@ -43,7 +43,6 @@ extension TreasureViewController {
 
 // MARK: - Helpers
 extension TreasureViewController {
-    
     private func setupAttribute() {
         profileImageView.layer.cornerRadius
         = profileImageView.frame.size.height/2

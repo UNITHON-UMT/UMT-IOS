@@ -43,7 +43,6 @@ extension QuestRegisterViewController {
             action: #selector(imageViewDidTap))
         questImageView.addGestureRecognizer(imageTapGesture)
         
-        
         camera.sourceType = .camera
         camera.allowsEditing = true // 정방향 여부
         camera.cameraDevice = .rear // 카메라 방향설정
