@@ -37,7 +37,6 @@ extension QuestRegisterViewController {
 extension QuestRegisterViewController {
     
     func setupAttribute() {
-
         questImageView.isUserInteractionEnabled = true
         let imageTapGesture = UITapGestureRecognizer(
             target: self,

@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         StoryboardUtil.shared.boards = ["Main", "Quest"]
         let rootViewController = StoryboardUtil().controller(from: QuestRegisterViewController.self)
 //        let rootViewController = QuestRegisterViewController()
-        self.window?.rootViewController = rootViewController
+        self.window?.rootViewController = CameraViewController()
         self.window?.makeKeyAndVisible()
     }
 

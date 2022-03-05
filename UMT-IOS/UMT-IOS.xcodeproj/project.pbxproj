@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254A13BD27D3B4F300EAAFDE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254A13BC27D3B4F300EAAFDE /* CameraViewController.swift */; };
+		254A13C027D3B67E00EAAFDE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 254A13BF27D3B67E00EAAFDE /* SnapKit */; };
 		25F69AFD27D34CCB00BA7BD7 /* Quest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */; };
 		25F69AFF27D34D0100BA7BD7 /* QuestRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */; };
 		25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */; };
 		25F69B0427D3673000BA7BD7 /* Solve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F69B0327D3673000BA7BD7 /* Solve.storyboard */; };
 		25F69B0627D3673D00BA7BD7 /* SolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69B0527D3673D00BA7BD7 /* SolveViewController.swift */; };
 		25F69B2B27D3818B00BA7BD7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69B2A27D3818B00BA7BD7 /* MainTabBarController.swift */; };
+		25F69B2E27D38E3000BA7BD7 /* Treasure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F69B2D27D38E2F00BA7BD7 /* Treasure.storyboard */; };
+		25F69B3027D38E3800BA7BD7 /* TreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69B2F27D38E3800BA7BD7 /* TreasureViewController.swift */; };
 		63B2F34883D6780F21622319 /* Pods_UMT_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D2B3EBA833A830097AC50C /* Pods_UMT_IOS.framework */; };
 		FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */; };
 		FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */; };
@@ -25,12 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		254A13BC27D3B4F300EAAFDE /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quest.storyboard; sourceTree = "<group>"; };
 		25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRegisterViewController.swift; sourceTree = "<group>"; };
 		25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
 		25F69B0327D3673000BA7BD7 /* Solve.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Solve.storyboard; sourceTree = "<group>"; };
 		25F69B0527D3673D00BA7BD7 /* SolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveViewController.swift; sourceTree = "<group>"; };
 		25F69B2A27D3818B00BA7BD7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		25F69B2D27D38E2F00BA7BD7 /* Treasure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Treasure.storyboard; sourceTree = "<group>"; };
+		25F69B2F27D38E3800BA7BD7 /* TreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureViewController.swift; sourceTree = "<group>"; };
 		76D2B3EBA833A830097AC50C /* Pods_UMT_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMT_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57558D05FD223CFE4B8CFBF /* Pods-UMT-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMT-IOS.debug.xcconfig"; path = "Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F7C50488D66BA6E60FA941BC /* Pods-UMT-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMT-IOS.release.xcconfig"; path = "Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254A13C027D3B67E00EAAFDE /* SnapKit in Frameworks */,
 				FF93AB8527D34F2A0044FCFB /* PanControllerHeight in Frameworks */,
 				63B2F34883D6780F21622319 /* Pods_UMT_IOS.framework in Frameworks */,
 			);
@@ -62,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */,
+				254A13BC27D3B4F300EAAFDE /* CameraViewController.swift */,
 				25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */,
 			);
 			path = Quest;
@@ -90,6 +99,15 @@
 				25F69B2A27D3818B00BA7BD7 /* MainTabBarController.swift */,
 			);
 			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		25F69B2C27D38E1F00BA7BD7 /* Treasure */ = {
+			isa = PBXGroup;
+			children = (
+				25F69B2D27D38E2F00BA7BD7 /* Treasure.storyboard */,
+				25F69B2F27D38E3800BA7BD7 /* TreasureViewController.swift */,
+			);
+			path = Treasure;
 			sourceTree = "<group>";
 		};
 		5A005E756D30A0330003C532 /* Pods */ = {
@@ -130,6 +148,7 @@
 		FF93AB6D27D34A1B0044FCFB /* UMT-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				25F69B2C27D38E1F00BA7BD7 /* Treasure */,
 				25F69B2927D3817B00BA7BD7 /* MainTabBar */,
 				25F69B0027D3565D00BA7BD7 /* StoryboardUtils */,
 				25F69AFB27D34C9B00BA7BD7 /* Solve */,
@@ -182,6 +201,7 @@
 			name = "UMT-IOS";
 			packageProductDependencies = (
 				FF93AB8427D34F2A0044FCFB /* PanControllerHeight */,
+				254A13BF27D3B67E00EAAFDE /* SnapKit */,
 			);
 			productName = "UMT-IOS";
 			productReference = FF93AB6B27D34A1B0044FCFB /* UMT-IOS.app */;
@@ -213,6 +233,7 @@
 			mainGroup = FF93AB6227D34A1B0044FCFB;
 			packageReferences = (
 				FF93AB8327D34F2A0044FCFB /* XCRemoteSwiftPackageReference "PanControllerHeight" */,
+				254A13BE27D3B67E00EAAFDE /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = FF93AB6C27D34A1B0044FCFB /* Products */;
 			projectDirPath = "";
@@ -231,6 +252,7 @@
 				FF93AB7B27D34A1C0044FCFB /* LaunchScreen.storyboard in Resources */,
 				25F69AFD27D34CCB00BA7BD7 /* Quest.storyboard in Resources */,
 				FF93AB7827D34A1C0044FCFB /* Assets.xcassets in Resources */,
+				25F69B2E27D38E3000BA7BD7 /* Treasure.storyboard in Resources */,
 				25F69B0427D3673000BA7BD7 /* Solve.storyboard in Resources */,
 				FF93AB7627D34A1B0044FCFB /* Main.storyboard in Resources */,
 			);
@@ -286,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF93AB7327D34A1B0044FCFB /* ViewController.swift in Sources */,
+				254A13BD27D3B4F300EAAFDE /* CameraViewController.swift in Sources */,
 				25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */,
 				25F69B2B27D3818B00BA7BD7 /* MainTabBarController.swift in Sources */,
 				FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */,
@@ -293,6 +316,7 @@
 				25F69B0627D3673D00BA7BD7 /* SolveViewController.swift in Sources */,
 				25F69AFF27D34D0100BA7BD7 /* QuestRegisterViewController.swift in Sources */,
 				FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */,
+				25F69B3027D38E3800BA7BD7 /* TreasureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3L398A7UTZ;
+				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UMT-IOS/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "짜란";
@@ -472,7 +496,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3L398A7UTZ;
+				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UMT-IOS/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "짜란";
@@ -518,6 +542,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		254A13BE27D3B67E00EAAFDE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 		FF93AB8327D34F2A0044FCFB /* XCRemoteSwiftPackageReference "PanControllerHeight" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/thunderlatent/PanControllerHeight";
@@ -529,6 +561,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		254A13BF27D3B67E00EAAFDE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 254A13BE27D3B67E00EAAFDE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		FF93AB8427D34F2A0044FCFB /* PanControllerHeight */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FF93AB8327D34F2A0044FCFB /* XCRemoteSwiftPackageReference "PanControllerHeight" */;
