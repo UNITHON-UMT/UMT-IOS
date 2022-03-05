@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25F69AFD27D34CCB00BA7BD7 /* Quest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */; };
+		25F69AFF27D34D0100BA7BD7 /* QuestRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */; };
+		25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */; };
 		FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */; };
 		FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */; };
 		FF93AB7327D34A1B0044FCFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7227D34A1B0044FCFB /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quest.storyboard; sourceTree = "<group>"; };
+		25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestRegisterViewController.swift; sourceTree = "<group>"; };
+		25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
 		FF93AB6B27D34A1B0044FCFB /* UMT-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMT-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25F69AFA27D34C6300BA7BD7 /* Quest */ = {
+			isa = PBXGroup;
+			children = (
+				25F69AFC27D34CCB00BA7BD7 /* Quest.storyboard */,
+				25F69AFE27D34D0100BA7BD7 /* QuestRegisterViewController.swift */,
+			);
+			path = Quest;
+			sourceTree = "<group>";
+		};
+		25F69AFB27D34C9B00BA7BD7 /* Solve */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Solve;
+			sourceTree = "<group>";
+		};
+		25F69B0027D3565D00BA7BD7 /* StoryboardUtils */ = {
+			isa = PBXGroup;
+			children = (
+				25F69B0127D3566900BA7BD7 /* StoryboardUtils.swift */,
+			);
+			path = StoryboardUtils;
+			sourceTree = "<group>";
+		};
 		FF93AB6227D34A1B0044FCFB = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +88,9 @@
 		FF93AB6D27D34A1B0044FCFB /* UMT-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				25F69B0027D3565D00BA7BD7 /* StoryboardUtils */,
+				25F69AFB27D34C9B00BA7BD7 /* Solve */,
+				25F69AFA27D34C6300BA7BD7 /* Quest */,
 				FF93AB8227D34A4E0044FCFB /* Main */,
 				FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */,
 				FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */,
@@ -142,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF93AB7B27D34A1C0044FCFB /* LaunchScreen.storyboard in Resources */,
+				25F69AFD27D34CCB00BA7BD7 /* Quest.storyboard in Resources */,
 				FF93AB7827D34A1C0044FCFB /* Assets.xcassets in Resources */,
 				FF93AB7627D34A1B0044FCFB /* Main.storyboard in Resources */,
 			);
@@ -155,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF93AB7327D34A1B0044FCFB /* ViewController.swift in Sources */,
+				25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */,
 				FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */,
+				25F69AFF27D34D0100BA7BD7 /* QuestRegisterViewController.swift in Sources */,
 				FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,12 +341,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3L398A7UTZ;
+				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UMT-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Quest;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,12 +369,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3L398A7UTZ;
+				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UMT-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Quest;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
