@@ -17,6 +17,8 @@ class SheetViewController: UIViewController {
     }
     
     var hashTags: [String] = ["#퀘스트존잼", "#포토스팟", "#인생사진"]
+    var questions: [String] = []
+    var questionSelected: [Bool] = []
     
     let collectionView: UICollectionView = {
         
@@ -90,14 +92,6 @@ class SheetViewController: UIViewController {
         let imageView = UIImageView(image: UIImage(named: "resIcon"))
         return imageView
     }()
-    
-    let questionTableView: UITableView = {
-        let tableview = UITableView()        
-        tableview.delegate = self
-        tableview.dataSource = self
-        return tableview
-    }()
-        
 
     //MARK: - LifeCycles
     override func viewDidAppear(_ animated: Bool) {

@@ -84,8 +84,6 @@ extension SheetViewController {
     func questionLayout() {
         containerView.addSubview(qIcon)
         containerView.addSubview(questionLabel)
-        containerView.addSubview(questionTableView)
-        containerView.addSubview(resIcon)
         
         qIcon.snp.makeConstraints { make in
             make.top.equalTo(line.snp.bottom).offset(20)
@@ -98,20 +96,5 @@ extension SheetViewController {
             make.centerY.equalTo(qIcon.snp.centerY)
             make.leading.equalTo(qIcon.snp.trailing).offset(10)
         }
-        
-        questionTableView.snp.makeConstraints { make in
-            make.top.equalTo(questionLabel.snp.bottom).offset(16)
-            make.leading.equalToSuperview().offset(60)
-            make.trailing.equalToSuperview().offset(-60)
-            make.height.equalTo(130)
-        }
-        
-        resIcon.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(questionTableView.snp.bottom).offset(20)
-            make.width.equalTo(142)
-            make.height.equalTo(45)
-        }
-        questionTableView.backgroundColor = .systemGray4
     }
 }
