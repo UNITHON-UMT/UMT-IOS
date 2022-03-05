@@ -6,7 +6,8 @@ target 'UMT-IOS' do
   use_frameworks!
 	pod 'GoogleMaps'
 	pod 'GooglePlaces'
-	 pod 'SnapKit', '~> 5.0.0'
+	pod 'SnapKit', '~> 5.0.0'
+	pod 'Alamofire', '~> 5.5'
 
   # Pods for UMT-IOS
 

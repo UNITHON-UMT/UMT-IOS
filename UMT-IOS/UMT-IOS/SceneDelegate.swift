@@ -14,16 +14,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        guard let scene = (scene as? UIWindowScene) else { return }
-        
-        self.window = UIWindow(windowScene: scene)
-        
-        // Set Storyboard Util
-        StoryboardUtil.shared.boards = ["Main", "Quest"]
-        let rootViewController = StoryboardUtil().controller(from: QuestRegisterViewController.self)
-//        let rootViewController = QuestRegisterViewController()
-        self.window?.rootViewController = rootViewController
-        self.window?.makeKeyAndVisible()
+//        guard let scene = (scene as? UIWindowScene) else { return }
+//        
+//        self.window = UIWindow(windowScene: scene)
+//        
+//        // Set Storyboard Util
+//        StoryboardUtil.shared.boards = ["Main", "Quest"]
+//        let rootViewController = StoryboardUtil().controller(from: QuestRegisterViewController.self)
+////        let rootViewController = QuestRegisterViewController()
+//        self.window?.rootViewController = rootViewController
+//        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

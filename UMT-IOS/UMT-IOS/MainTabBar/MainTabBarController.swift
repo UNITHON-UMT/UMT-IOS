@@ -31,12 +31,14 @@ class MainTabBarController: UITabBarController {
     }()
     var customTabBarView = UIView(frame: .zero)
     
+    let sheetVC = SheetViewController()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTabBarUI()
         self.addCustomTabBarView()
+        self.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -109,7 +111,7 @@ class MainTabBarController: UITabBarController {
         self.customTabBarView.layer.shadowOpacity = 0.88
         self.customTabBarView.layer.shadowRadius = 5
         self.view.addSubview(customTabBarView)
-//        customTabBarView.layer.zPosition = 1
+        customTabBarView.layer.zPosition = 1
         
         self.view.bringSubviewToFront(self.tabBar)
         self.view.addSubview(addButton)
@@ -124,5 +126,17 @@ class MainTabBarController: UITabBarController {
             self,
             action: #selector(addButtonDidTap),
             for: .touchUpInside)
+    }
+}
+
+extension MainTabBarController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if viewController is VC1 {
+            
+            sheetVC.configurePanSetting(viewController: sheetVC, defaultHeight: 300, maxHeight: 600)
+            presentPanViewController(viewController: sheetVC)
+            return false
+        }
+        return false
     }
 }

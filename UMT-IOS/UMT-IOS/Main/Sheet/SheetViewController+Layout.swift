@@ -8,7 +8,7 @@ import UIKit
 
 extension SheetViewController {
     
-    func configureContainerView() {
+    func configureContainerView() {    
         configureCollectionView()
         treasureInfoLabel()
         questionLayout()

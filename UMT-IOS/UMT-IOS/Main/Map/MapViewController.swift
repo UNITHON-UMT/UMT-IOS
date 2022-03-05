@@ -9,43 +9,45 @@ import UIKit
 import PanControllerHeight
 import GoogleMaps
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, LocDelegate {
+    func didSuccessGetLocs(locs: [Loc]) {
+        locs.forEach { loc in
+            viewModel?.makeMark(latitude: loc.latitude!, longitude: loc.longitude!)
+        }
+    }
+    
+    func failedToRequest(_ message: String) {
+        
+    }
+    
 
     //MARK: - Properties
     var viewModel: MainViewModel?
     var mapView = GMSMapView()
     let sheetVC = SheetViewController()
+    let dataManager = DataManager()
     
     //MARK: - Life Cycles
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        dataManager.getLocs(lat: 37.548, long: 127.044, delegate: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(showSheetVC), name: .init(rawValue: "showSheet"), object: nil)
         viewModel = MainViewModel(viewController: self)
-    }
+        viewModel?.makeMark(latitude: 37.548, longitude:  127.044)
+    }       
     
     override func viewDidAppear(_ animated: Bool) {
         viewModel?.makeMark(latitude: 0, longitude: 0)
     }
     
-    @IBAction func showSheetVC(_ sender: Any) {
-        print("touched")
-        if viewModel != nil {
-            viewModel?.showSheetVC()
-        }else{
-            print("viewModel is disappear")
-        }
+    @objc func showSheetVC() {
+        viewModel?.showSheetVC()
     }
-    //    override func loadView() {
-//        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-//        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-//        view = mapView
-//        mapView.delegate = self
-//
-//        // Creates a marker in the center of the map.
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
-//    }
+        override func loadView() {
+        let camera = GMSCameraPosition.camera(withLatitude: 37.548, longitude: 127.044, zoom: 15.0)
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        mapView.delegate = self
+    }
 }
 
