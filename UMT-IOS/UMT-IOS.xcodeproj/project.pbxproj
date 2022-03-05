@@ -20,12 +20,25 @@
 		63B2F34883D6780F21622319 /* Pods_UMT_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D2B3EBA833A830097AC50C /* Pods_UMT_IOS.framework */; };
 		FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */; };
 		FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */; };
-		FF93AB7327D34A1B0044FCFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7227D34A1B0044FCFB /* ViewController.swift */; };
+		FF93AB7327D34A1B0044FCFB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB7227D34A1B0044FCFB /* MapViewController.swift */; };
 		FF93AB7627D34A1B0044FCFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7427D34A1B0044FCFB /* Main.storyboard */; };
 		FF93AB7827D34A1C0044FCFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7727D34A1C0044FCFB /* Assets.xcassets */; };
 		FF93AB7B27D34A1C0044FCFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB7927D34A1C0044FCFB /* LaunchScreen.storyboard */; };
 		FF93AB8527D34F2A0044FCFB /* PanControllerHeight in Frameworks */ = {isa = PBXBuildFile; productRef = FF93AB8427D34F2A0044FCFB /* PanControllerHeight */; };
 		FF93AB8827D350CC0044FCFB /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB8727D350CC0044FCFB /* SheetViewController.swift */; };
+		FF93AB8B27D363FC0044FCFB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB8A27D363FC0044FCFB /* MainViewModel.swift */; };
+		FF93AB8D27D365870044FCFB /* MapViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB8C27D365870044FCFB /* MapViewController+Delegate.swift */; };
+		FF93AB9227D388890044FCFB /* HashTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB9027D388890044FCFB /* HashTagCell.swift */; };
+		FF93AB9327D388890044FCFB /* HashTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB9127D388890044FCFB /* HashTagCell.xib */; };
+		FF93AB9627D3895F0044FCFB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB9527D3895F0044FCFB /* Color.swift */; };
+		FF93AB9827D38E470044FCFB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB9727D38E470044FCFB /* String+Extension.swift */; };
+		FF93AB9A27D38F5D0044FCFB /* SheetViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB9927D38F5D0044FCFB /* SheetViewController+Layout.swift */; };
+		FF93AB9C27D38FA20044FCFB /* SheetViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB9B27D38FA20044FCFB /* SheetViewController+Delegate.swift */; };
+		FF93AB9F27D39CE00044FCFB /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93AB9D27D39CE00044FCFB /* QuestionCell.swift */; };
+		FF93ABA027D39CE00044FCFB /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF93AB9E27D39CE00044FCFB /* QuestionCell.xib */; };
+		FF93ABA227D3A6930044FCFB /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93ABA127D3A6930044FCFB /* VC1.swift */; };
+		FF93ABA427D3A69E0044FCFB /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93ABA327D3A69E0044FCFB /* VC2.swift */; };
+		FF93ABA627D3AFCC0044FCFB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93ABA527D3AFCC0044FCFB /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +57,25 @@
 		FF93AB6B27D34A1B0044FCFB /* UMT-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMT-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF93AB6E27D34A1B0044FCFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF93AB7027D34A1B0044FCFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF93AB7227D34A1B0044FCFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF93AB7227D34A1B0044FCFB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FF93AB7527D34A1B0044FCFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF93AB7727D34A1C0044FCFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF93AB7A27D34A1C0044FCFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF93AB7C27D34A1C0044FCFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF93AB8727D350CC0044FCFB /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		FF93AB8A27D363FC0044FCFB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FF93AB8C27D365870044FCFB /* MapViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Delegate.swift"; sourceTree = "<group>"; };
+		FF93AB9027D388890044FCFB /* HashTagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagCell.swift; sourceTree = "<group>"; };
+		FF93AB9127D388890044FCFB /* HashTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HashTagCell.xib; sourceTree = "<group>"; };
+		FF93AB9527D3895F0044FCFB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FF93AB9727D38E470044FCFB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FF93AB9927D38F5D0044FCFB /* SheetViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SheetViewController+Layout.swift"; sourceTree = "<group>"; };
+		FF93AB9B27D38FA20044FCFB /* SheetViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SheetViewController+Delegate.swift"; sourceTree = "<group>"; };
+		FF93AB9D27D39CE00044FCFB /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		FF93AB9E27D39CE00044FCFB /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		FF93ABA127D3A6930044FCFB /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
+		FF93ABA327D3A69E0044FCFB /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		FF93ABA527D3AFCC0044FCFB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				25F69B2C27D38E1F00BA7BD7 /* Treasure */,
+				FF93AB9427D389530044FCFB /* Config */,
 				25F69B2927D3817B00BA7BD7 /* MainTabBar */,
 				25F69B0027D3565D00BA7BD7 /* StoryboardUtils */,
 				25F69AFB27D34C9B00BA7BD7 /* Solve */,
@@ -166,9 +193,10 @@
 		FF93AB8227D34A4E0044FCFB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FF93AB8927D363DB0044FCFB /* Map */,
 				FF93AB8627D350B50044FCFB /* Sheet */,
-				FF93AB7427D34A1B0044FCFB /* Main.storyboard */,
-				FF93AB7227D34A1B0044FCFB /* ViewController.swift */,
+				FF93ABA127D3A6930044FCFB /* VC1.swift */,
+				FF93ABA327D3A69E0044FCFB /* VC2.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -177,8 +205,35 @@
 			isa = PBXGroup;
 			children = (
 				FF93AB8727D350CC0044FCFB /* SheetViewController.swift */,
+				FF93AB9927D38F5D0044FCFB /* SheetViewController+Layout.swift */,
+				FF93AB9B27D38FA20044FCFB /* SheetViewController+Delegate.swift */,
+				FF93AB9027D388890044FCFB /* HashTagCell.swift */,
+				FF93AB9127D388890044FCFB /* HashTagCell.xib */,
+				FF93AB9D27D39CE00044FCFB /* QuestionCell.swift */,
+				FF93AB9E27D39CE00044FCFB /* QuestionCell.xib */,
 			);
 			path = Sheet;
+			sourceTree = "<group>";
+		};
+		FF93AB8927D363DB0044FCFB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FF93AB7427D34A1B0044FCFB /* Main.storyboard */,
+				FF93AB8A27D363FC0044FCFB /* MainViewModel.swift */,
+				FF93AB7227D34A1B0044FCFB /* MapViewController.swift */,
+				FF93AB8C27D365870044FCFB /* MapViewController+Delegate.swift */,
+				FF93ABA527D3AFCC0044FCFB /* DataManager.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		FF93AB9427D389530044FCFB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FF93AB9527D3895F0044FCFB /* Color.swift */,
+				FF93AB9727D38E470044FCFB /* String+Extension.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +248,7 @@
 				FF93AB6827D34A1B0044FCFB /* Frameworks */,
 				FF93AB6927D34A1B0044FCFB /* Resources */,
 				A3D9C9D5600054F36A0D487E /* [CP] Copy Pods Resources */,
+				A1F1491BA618BFC6BBC6B8C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,11 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF93AB7B27D34A1C0044FCFB /* LaunchScreen.storyboard in Resources */,
+				FF93ABA027D39CE00044FCFB /* QuestionCell.xib in Resources */,
 				25F69AFD27D34CCB00BA7BD7 /* Quest.storyboard in Resources */,
 				FF93AB7827D34A1C0044FCFB /* Assets.xcassets in Resources */,
 				25F69B2E27D38E3000BA7BD7 /* Treasure.storyboard in Resources */,
 				25F69B0427D3673000BA7BD7 /* Solve.storyboard in Resources */,
 				FF93AB7627D34A1B0044FCFB /* Main.storyboard in Resources */,
+				FF93AB9327D388890044FCFB /* HashTagCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +341,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A1F1491BA618BFC6BBC6B8C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UMT-IOS/Pods-UMT-IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A3D9C9D5600054F36A0D487E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,14 +384,26 @@
 			files = (
 				FF93AB7327D34A1B0044FCFB /* ViewController.swift in Sources */,
 				254A13BD27D3B4F300EAAFDE /* CameraViewController.swift in Sources */,
+				FF93AB8B27D363FC0044FCFB /* MainViewModel.swift in Sources */,
+				FF93AB9827D38E470044FCFB /* String+Extension.swift in Sources */,
+				FF93AB7327D34A1B0044FCFB /* MapViewController.swift in Sources */,
+				FF93AB9F27D39CE00044FCFB /* QuestionCell.swift in Sources */,
 				25F69B0227D3566900BA7BD7 /* StoryboardUtils.swift in Sources */,
+				FF93AB9627D3895F0044FCFB /* Color.swift in Sources */,
 				25F69B2B27D3818B00BA7BD7 /* MainTabBarController.swift in Sources */,
 				FF93AB6F27D34A1B0044FCFB /* AppDelegate.swift in Sources */,
+				FF93AB8D27D365870044FCFB /* MapViewController+Delegate.swift in Sources */,
+				FF93ABA427D3A69E0044FCFB /* VC2.swift in Sources */,
 				FF93AB8827D350CC0044FCFB /* SheetViewController.swift in Sources */,
+				FF93AB9A27D38F5D0044FCFB /* SheetViewController+Layout.swift in Sources */,
+				FF93AB9227D388890044FCFB /* HashTagCell.swift in Sources */,
 				25F69B0627D3673D00BA7BD7 /* SolveViewController.swift in Sources */,
+				FF93ABA627D3AFCC0044FCFB /* DataManager.swift in Sources */,
+				FF93ABA227D3A6930044FCFB /* VC1.swift in Sources */,
 				25F69AFF27D34D0100BA7BD7 /* QuestRegisterViewController.swift in Sources */,
 				FF93AB7127D34A1B0044FCFB /* SceneDelegate.swift in Sources */,
 				25F69B3027D38E3800BA7BD7 /* TreasureViewController.swift in Sources */,
+				FF93AB9C27D38FA20044FCFB /* SheetViewController+Delegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
